@@ -1,0 +1,38 @@
+{% extends 'shogproducts/base.html'%}
+{% load static %}
+
+{% block title %} home {% endblock%}
+
+
+{% block content%}
+
+<section class="mainsection">
+
+        <div class="LogoHome">
+            <a href="{% url 'home' %}"><img src="{% static 'products/images/logo.JPG'%}" alt="logo"></a>
+        </div>
+        <div class="buttons">
+            <ul >
+                <li>
+                    <a href="https://www.etsy.com/uk/shop/FaceMaskShogDesign?ref=seller-platform-mcnav" target=”_blank” >Etsy shop</a>
+                    <br/>
+                </li>
+
+                <li>
+                    <a href="{% url 'products' %}" >New Products</a>
+                    <br/>
+                </li>
+
+                <li>
+                    <a href="{% url 'contact' %}" >Contact</a>
+
+                    <br/>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+
+
+{% endblock %}

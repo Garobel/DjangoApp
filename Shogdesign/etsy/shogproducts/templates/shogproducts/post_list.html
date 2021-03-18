@@ -1,0 +1,24 @@
+{% extends 'shogproducts/base.html'%}
+{% block title %} post {% endblock%}
+
+
+{% block content%}
+
+
+    {% for p in posts %}
+<article class="MCards">
+
+    <div>
+        <img id="big" class="img" src={{p.image.url}} alt="mascara">
+    </div>
+        
+    <div class="description">
+        <h2>{{p.title}}</h2>
+        <button class="BuyB"><a href="https://www.etsy.com/uk/shop/FaceMaskShogDesign?ref=seller-platform-mcnav" target=”_blank” >Buy Now!</a></button>
+        <p>{{p.description}}</p>
+    </div>
+</article>
+    {% endfor %}
+
+
+{% endblock %}
